@@ -4,7 +4,7 @@
   "private": true,
   "description": "Prakash Tour & Travels — static website + owner admin panel + placeholder payment API routes, deployable on Vercel with zero build step.",
   "dependencies": {
-    "@prisma/client": "^7.9.1",
+    "@prisma/client": "6.19.1",
     "@vercel/blob": "^2.8.0",
     "bcryptjs": "^3.0.3",
     "busboy": "^1.6.0",
@@ -22,6 +22,6 @@
     "db:studio": "prisma studio"
   },
   "engines": {
-    "node": ">=18"
+    "node": "20.x"
   }
 }
