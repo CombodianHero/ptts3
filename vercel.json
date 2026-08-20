@@ -5,11 +5,22 @@
   "headers": [
     {
       "source": "/admin.html",
-      "headers": [{ "key": "X-Robots-Tag", "value": "noindex, nofollow" }]
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, nofollow"
+        }
+      ]
     }
   ],
   "rewrites": [
-    { "source": "/payment/:token", "destination": "/payment.html?token=:token" },
-    { "source": "/invoice/:bookingId", "destination": "/invoice.html?bookingId=:bookingId" }
-  ],
+    {
+      "source": "/payment/:token",
+      "destination": "/payment.html?token=:token"
+    },
+    {
+      "source": "/invoice/:bookingId",
+      "destination": "/invoice.html?bookingId=:bookingId"
+    }
+  ]
 }
