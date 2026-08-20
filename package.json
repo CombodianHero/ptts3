@@ -1,0 +1,27 @@
+{
+  "name": "prakash-tour-travels",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Prakash Tour & Travels — static website + owner admin panel + placeholder payment API routes, deployable on Vercel with zero build step.",
+  "dependencies": {
+    "@prisma/client": "^7.9.1",
+    "@vercel/blob": "^2.8.0",
+    "bcryptjs": "^3.0.3",
+    "busboy": "^1.6.0",
+    "jose": "^6.2.9",
+    "prisma": "^7.9.1",
+    "razorpay": "^2.9.8",
+    "resend": "^4.0.1"
+  },
+  "scripts": {
+    "dev": "npx vercel dev",
+    "deploy": "npx vercel --prod",
+    "postinstall": "prisma generate",
+    "db:migrate": "prisma migrate deploy",
+    "db:migrate:dev": "prisma migrate dev",
+    "db:studio": "prisma studio"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
