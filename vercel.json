@@ -12,7 +12,4 @@
     { "source": "/payment/:token", "destination": "/payment.html?token=:token" },
     { "source": "/invoice/:bookingId", "destination": "/invoice.html?bookingId=:bookingId" }
   ],
-  "crons": [
-    { "path": "/api/cron/reminders", "schedule": "0 9 * * *" }
-  ]
 }
